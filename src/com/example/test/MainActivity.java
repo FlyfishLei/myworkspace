@@ -25,47 +25,7 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.main);
-
-		ListView listView = (ListView) findViewById(R.id.myLstView);
-		final EditText editText = (EditText) findViewById(R.id.myEditText);
-
-		final ArrayList<String> toDoItems = new ArrayList<String>();
-		for (int i = 0; i < 20; i++) {
-			toDoItems.add("lemon" + i);
-		}
-		final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(
-				this,android.R.layout.simple_list_item_1, toDoItems);
-		listView.setAdapter(arrayAdapter);
-		
-		
-		editText.setOnKeyListener(new View.OnKeyListener() {
-			
-			@Override
-			public boolean onKey(View v, int keyCode, KeyEvent event) {
-				// TODO Auto-generated method stub
-				
-				if (event.getAction()==KeyEvent.ACTION_DOWN) {
-					if (keyCode==KeyEvent.KEYCODE_ENTER) {
-						toDoItems.add(0,editText.getText().toString());
-						arrayAdapter.notifyDataSetChanged();
-						editText.setText("");
-						return true;
-					}
-				} 
-				return false;
-			}
-		});
-		// myButton1=(Button)findViewById(R.id.button1);
-		// //使用匿名类注册Button事件
-		// myButton1.setOnClickListener(new OnClickListener()
-		// {
-		// public void onClick(View v)
-		// {
-		// Toast.makeText(MainActivity.this,
-		// "Hello,Wolrd!",Toast.LENGTH_LONG).show();
-		// }
-		// });
+		setContentView(R.layout.frag_main);
 	}
 
 	@Override
