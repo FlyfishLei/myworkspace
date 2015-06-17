@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="app_name">test</string>
+    <string name="app_name">社交软件Demo</string>
     <string name="hello_world">Hello world....汤磊！！！！！！！！！！！</string>
     <string name="action_settings">汤磊的设置</string>
  	<string name="menu_item_text">点击测试</string>
