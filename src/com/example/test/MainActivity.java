@@ -21,7 +21,7 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 	// Button myButton1;
-
+  // Ö÷Ò³Ãæ
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -52,7 +52,7 @@ public class MainActivity extends Activity {
 						editText.setText("");
 						return true;
 					}
-				}
+				} 
 				return false;
 			}
 		});
